@@ -2,7 +2,7 @@ rootProject.name = "banana"
 
 include(
     "api",
-    "common",
+    "common:logger",
 )
 
 pluginManagement {
