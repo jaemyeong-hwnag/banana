@@ -3,6 +3,7 @@ rootProject.name = "banana"
 include(
     "api",
     "common:logger",
+    "common:notification",
     "external",
 )
 
