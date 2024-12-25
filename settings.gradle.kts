@@ -4,7 +4,7 @@ include(
     "api",
     "common:logger",
     "common:notification",
-    "external",
+    "external:api",
 )
 
 pluginManagement {

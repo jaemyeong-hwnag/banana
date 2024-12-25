@@ -1,6 +1,6 @@
 dependencies {
     implementation(project(":common:logger"))
-    implementation(project(":external"))
+    implementation(project(":external:api"))
 }
 
 tasks.withType<JavaExec> {
