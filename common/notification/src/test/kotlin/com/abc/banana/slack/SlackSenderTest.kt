@@ -1,7 +1,7 @@
 package com.abc.banana.slack
 
 import com.abc.banana.NotificationSender
-import com.abc.banana.SlackClient
+import slack.SlackClient
 import com.abc.banana.enums.SlackChannel
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

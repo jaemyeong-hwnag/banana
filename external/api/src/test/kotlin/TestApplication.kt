@@ -1,9 +1,6 @@
-package com.abc.banana
-
-import com.abc.banana.util.logger
+import util.logger
 import org.junit.jupiter.api.Test
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootApplication
 class ApplicationTests {

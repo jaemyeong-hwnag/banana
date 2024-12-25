@@ -1,6 +1,5 @@
-package com.abc.banana
+package util
 
-import com.abc.banana.util.logger
 import org.junit.jupiter.api.Test
 
 class LoggerTest {

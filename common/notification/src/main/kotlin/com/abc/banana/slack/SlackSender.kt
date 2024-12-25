@@ -1,9 +1,9 @@
 package com.abc.banana.slack
 
 import com.abc.banana.NotificationSender
-import com.abc.banana.SlackClient
+import slack.SlackClient
 import com.abc.banana.enums.SlackChannel
-import com.abc.banana.util.logger
+import util.logger
 import org.springframework.stereotype.Component
 
 @Component

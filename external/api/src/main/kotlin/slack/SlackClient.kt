@@ -1,6 +1,6 @@
-package com.abc.banana
+package slack
 
-import com.abc.banana.util.logger
+import util.logger
 import com.slack.api.Slack
 import com.slack.api.methods.SlackApiException
 import com.slack.api.methods.request.chat.ChatPostMessageRequest.ChatPostMessageRequestBuilder
