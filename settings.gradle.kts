@@ -5,6 +5,7 @@ include(
     "common:logger",
     "common:notification",
     "external:api",
+    "external:storage",
 )
 
 pluginManagement {
