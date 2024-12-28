@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    master:
+      hikari:
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        jdbc-url: jdbc:p6spy:mysql://${MAIN_DB_HOST}:${MAIN_DB_PORT}/${MAIN_DB_DATABASE}?zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
+        password: ${MAIN_DB_PASSWORD}
+        username: ${MAIN_DB_USERNAME}
+        maximum-pool-size: ${MAIN_DB_MAX_POOL:5}
+        minimum-idle: ${MAIN_DB_MIN_IDLE:3}
+    slave:
+      hikari:
+        driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+        jdbc-url: jdbc:p6spy:mysql://${READ_DB_HOST}:${READ_DB_PORT}/${READ_DB_DATABASE}?zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
+        password: ${READ_DB_PASSWORD}
+        username: ${READ_DB_USERNAME}
+        maximum-pool-size: ${READ_DB_MAX_POOL:5}
+        minimum-idle: ${READ_DB_MIN_IDLE:3}
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: ${IS_DB_LOG_ENABLE}

@@ -3,6 +3,7 @@ plugins {
     kotlin("plugin.spring") apply false
     id("org.springframework.boot") apply false
     id("io.spring.dependency-management") apply false
+    kotlin("kapt")
 }
 
 java {
@@ -27,6 +28,7 @@ subprojects {
 	apply(plugin = "kotlin")
 	apply(plugin = "org.springframework.boot")
 	apply(plugin = "io.spring.dependency-management")
+    apply(plugin = "kotlin-kapt")
 
     dependencies {
         implementation("org.springframework.boot:spring-boot-starter")
